@@ -1,0 +1,38 @@
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1320px;
+    height: 600px;
+    margin: 50px auto;
+    color: white;
+    border-radius: 10px;
+    background-image:
+    linear-gradient(
+            to bottom,
+            rgba(0, 0, 0, 0.9),   /* darker top */
+            rgba(0, 0, 0, 0)    /* lighter bottom */
+        ),
+    url(../images/Banner\ Image.png);
+    background-blend-mode: darken;
+}
+
+.hero-area {
+    justify-content: center;
+    text-align: center;
+}
+.hero-heading {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.hero-description {
+    font-size: 72px;
+    line-height: 70px;
+}
