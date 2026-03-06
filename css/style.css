@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 .header {
     display: flex;
@@ -23,7 +24,10 @@
     url(../images/Banner\ Image.png);
     background-blend-mode: darken;
 }
-
+main {
+    width: 1320px;
+    margin: 50px auto;   
+}
 .hero-area {
     justify-content: center;
     text-align: center;
@@ -31,8 +35,209 @@
 .hero-heading {
     font-size: 32px;
     margin-bottom: 20px;
+    font-weight: 400;
 }
 .hero-description {
     font-size: 72px;
     line-height: 70px;
+}
+/* Offer Section */
+.offer-section {
+    width: 800px;
+    margin: 0 auto;
+}
+.offer-container {
+    margin-top: 150px;
+    /* justify-content: center;
+    align-self: center; */
+    text-align: center;
+}
+.offer-container h5, .offer-container img {
+    margin-top: 48px;
+    font-size: 24px;
+    font-weight: 500;
+    color: red;
+}
+.offer-container h3 {
+    margin-top: 16px;
+    font-size: 48px;
+    font-weight: bold;
+}
+.offer-container h1 {
+    font-size: 88px;
+    color: red;
+}
+.party {
+    height: 600px;
+    border-radius: 15px;
+    background-image: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.9),   /* darker left */
+            rgba(0, 0, 0, 0)    /* lighter right */
+        ), url(../images/Vectorrr.png);
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 138px 0 126px;
+}
+.party-container {
+    display: flex;
+    gap: 40px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+.party-details h2{
+    margin-bottom: 24px;
+    font-size: 64px;
+}
+.party-details p{
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 48px;
+    color: rgba(255, 255, 255, 0.8);
+    /* color: rgba(7, 2, 17, 0.6); */
+}
+.party-details a {
+    text-decoration: none;
+    font-size: 28px;
+    font-weight: 400;
+    color: white;
+    padding: 0 0 0 32px;
+    /* background-color: rgba(0, 0, 0, 0); */
+}
+.party-details a:hover {
+    text-decoration: underline;
+}
+
+/* Schedule Section */
+
+.schedule-section {
+    margin-top: 120px;
+    display: flex;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 482px;
+    background-color: bisque;
+    background: linear-gradient(
+    to bottom,
+    rgba(255, 0, 0, .1) 0%,
+    rgba(255, 0, 0, 0) 100%
+);
+    font-size: 32px;
+    line-height: 56px;
+}
+.schedule-section span {
+    color: red;
+}
+.schedule-section button {
+    margin-top: 48px;
+    background: red;
+    padding: 16px 32px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Three Section */
+.three-section {
+    /* background-color: aquamarine; */
+    height: 463px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    margin-top: 120px;
+    border-radius: 15px;
+}
+.three-section p {
+    color: rgba(7, 2, 17, 0.6);
+}
+.part1 {
+    width: 40%;
+}
+.part1 h4 {
+    font-size: 24px;
+    color: red;
+    margin-bottom: 16px;
+}
+.part1 h2 {
+    font-size: 48px;
+    margin-bottom: 22px;
+}
+.part1 p {
+    font-size: 20px;
+    line-height: 32px;
+}
+.part2 {
+    width: 35%;
+}
+.part2 img {
+    border-radius: 50%;
+    padding: 30px;
+    border: 15px solid red;
+}
+.part3 {
+    width: 25%;
+}
+.part3 h2 {
+    font-size: 48px;
+    color: red;
+    margin-bottom: 16px;
+}
+.part3 p {
+    margin-bottom: 43px;
+}
+/* Sale Section */
+.sale-section {
+    height: 986px;
+    margin-top: 120px;
+}
+.sale-description {
+    width: 1068px;
+    margin: 0 auto 64px;
+    text-align: center;
+}
+.sale-description h4 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+.sale-description h1 {
+    font-size: 72px;
+    margin-bottom: 28px;
+}
+.sale-description h1 span{
+    color: red;
+}
+.sale-description p {
+    font-size: 20px;
+    margin-bottom: 64px;
+    color: rgba(7, 2, 17, 0.6);
+}
+.sale-pictures {
+    position: relative;
+}
+.bg-pic {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+}
+.front-pics {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.big-pic {
+    z-index: 2;
+}
+.small-pic {
+    margin-top: 77px;
 }
